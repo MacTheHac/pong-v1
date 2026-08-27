@@ -1,0 +1,4 @@
+.DS_Store
+
+# Godot editor and import cache
+**/.godot/
