@@ -17,11 +17,16 @@ func _physics_process(delta: float) -> void:
 	if collision:
 		direction = direction.bounce(collision.get_normal()).normalized()
 		speed += SPEED_UP
+		Global.punkte += 10
 
 	if position.y > BOTTOM_LIMIT:
+		Global.leben -= 1
+		if Global.leben == 0:
+			get_tree().quit()
 		reset_ball()
 
 func reset_ball() -> void:
+	Global.punkte = 0
 	position = START_POSITION
 	speed = START_SPEED
 	direction = Vector2([-0.65, 0.65].pick_random(), -1.0).normalized()

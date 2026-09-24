@@ -53,3 +53,19 @@ offset_right = 870.0
 offset_bottom = 634.0
 text = "Bewege den Schlaeger mit den Pfeiltasten. Faellt der Ball unten raus, startet er neu."
 horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PunkteLabel" type="Label" parent="CanvasLayer"]
+offset_left = 93.0
+offset_top = 52.0
+offset_right = 133.0
+offset_bottom = 75.0
+text = "Punkte: 1000"
+
+[node name="LebenLabel" type="Label" parent="CanvasLayer"]
+offset_left = 767.0
+offset_top = 51.0
+offset_right = 867.0
+offset_bottom = 74.0
+text = "Punkte: 1000"
